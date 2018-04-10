@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lizhi.rko.FireInformationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fa8e36"
+        android:id="@+id/relativeLayout2">
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/back_fire_informationg"
+            android:src="@mipmap/back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="火警信息"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+        <RadioButton
+            android:textColor="@drawable/item_fire_textcolor"
+            android:id="@+id/wcl"
+            style="@style/RB2"
+            android:checked="true"
+            android:text="未处理"/>
+        <RadioButton
+            android:textColor="@drawable/item_fire_textcolor2"
+            android:id="@+id/clz"
+            style="@style/RB2"
+            android:text="处理中"/>
+        <RadioButton
+            android:textColor="@drawable/item_fire_textcolor3"
+            android:id="@+id/ycl"
+            style="@style/RB2"
+            android:text="已处理"/>
+
+    </RadioGroup>
+    <View
+        android:id="@+id/View1"
+        android:layout_below="@+id/RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#838282"/>
+    <FrameLayout
+        android:id="@+id/fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/View1"/>
+
+
+</RelativeLayout>

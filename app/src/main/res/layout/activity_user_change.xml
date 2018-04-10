@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context="com.example.lizhi.rko.UserChangeActivity">
+
+    <RelativeLayout
+        android:id="@+id/c"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fa8e36"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/userchange_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/back"
+            android:padding="10dp"
+            android:clickable="true"
+            />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="保存"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:background="@null"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@id/c"
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="头像"
+            android:clickable="false"
+            android:textSize="25sp"
+            android:paddingLeft="30dp"
+            android:gravity="center_vertical"/>
+        <ImageView
+            android:id="@+id/ImageView_head"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/tx" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/a"
+        android:background="#d9d9d9"
+        android:id="@+id/view2" />
+    <RelativeLayout
+        android:id="@+id/b"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view2"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="用户名"
+            android:clickable="false"
+            android:textSize="25sp"
+            android:paddingLeft="30dp"
+            android:gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/username_change"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:text="LANCE"
+            android:clickable="true"
+            android:background="@null"
+            android:textSize="22sp"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/b"
+        android:background="#d9d9d9"
+        />
+
+
+</RelativeLayout>

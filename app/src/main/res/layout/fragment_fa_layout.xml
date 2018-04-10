@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fa8e36"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/back"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备管理"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:id="@+id/center_btn_set"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="编辑"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@null"/>
+        <Button
+            android:id="@+id/center_btn_set_false"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="完成"
+            android:visibility="gone"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@null"/>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:visibility="gone"
+        android:id="@+id/ImageBtn_1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@mipmap/jiahao_bai" />
+    <com.example.lizhi.rko.centerFragment.MyListview
+        android:id="@+id/lv_my_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="#ffffff"
+        android:dividerHeight="5dp">
+    </com.example.lizhi.rko.centerFragment.MyListview>
+
+</LinearLayout>

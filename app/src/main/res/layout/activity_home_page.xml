@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lizhi.rko.HomePageActivity">
+
+    <View
+        android:background="#979797"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/fragment"/>
+    <RadioGroup
+        android:id="@+id/RG"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/hp"
+            android:text="首页"
+            android:checked="true"
+            android:drawableTop="@drawable/item_hp"
+            style="@style/RadioButtom" />
+        <RadioButton
+            android:id="@+id/fa"
+            android:text="设备"
+            android:drawableTop="@drawable/item_fa"
+            style="@style/RadioButtom" />
+        <RadioButton
+            android:id="@+id/user"
+            android:text="个人中心"
+            android:drawableTop="@drawable/item_user"
+            style="@style/RadioButtom" />
+    </RadioGroup>
+    <View
+        android:id="@+id/ViewB"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/RG" />
+    <View
+        android:id="@+id/ViewA"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_alignParentTop="true"/>
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ViewB"
+        android:layout_below="@id/ViewA"/>
+
+</RelativeLayout>

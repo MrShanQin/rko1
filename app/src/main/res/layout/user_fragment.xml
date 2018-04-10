@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/user_1"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@mipmap/background_user"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/tx"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:id="@+id/imageView6" />
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/imageView6"
+            android:layout_centerHorizontal="true"
+            android:textColor="#e4e4e4"
+            android:gravity="center"
+            android:text="用户名"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:background="#ff7c12"
+        android:text="管理员"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/textView" />
+
+    <TextView
+        style="@style/center_style"
+        android:drawableLeft="@mipmap/book"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:text="使用帮助"
+        android:id="@+id/textView1" />
+    <View
+        android:layout_below="@id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#b9b9b9"/>
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/center_style"
+        android:text="修改密码"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentStart="true"
+        android:drawableLeft="@mipmap/password_change"/>
+    <View
+        android:layout_below="@id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#b9b9b9"/>
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/center_style"
+        android:text="更改用户名及头像"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:drawableLeft="@mipmap/user_c"/>
+    <View
+        android:layout_below="@id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#b9b9b9"/>
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/center_style"
+        android:text="设置"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:drawableLeft="@mipmap/set"/>
+    <View
+        android:layout_below="@id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#b9b9b9"
+        android:id="@+id/view" />
+    
+    <Button
+        android:id="@+id/mbtn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view"
+        android:text="退出当前登录"
+        android:textSize="20sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#f2f2f2">
+
+    <TextView
+        android:id="@+id/mTextView_cgq"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A栋"/>
+    <View
+        android:layout_below="@id/mTextView_cgq"
+        android:id="@+id/aaaaaa"
+        android:background="#808080"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@id/aaaaaa">
+        <com.example.lizhi.rko.centerFragment.HorizontalListView
+            android:id="@+id/horizontal_listview"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:divider="#f2f2f2"
+            android:dividerHeight="20dp">
+        </com.example.lizhi.rko.centerFragment.HorizontalListView>
+        <ImageButton
+            android:id="@+id/ImageBtn_3"
+            android:background="#f2f2f2"
+            android:src="@mipmap/jiahao_hui"
+            android:layout_width="50dp"
+            android:visibility="visible"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

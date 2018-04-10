@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".XQActivity"
+    android:background="@mipmap/background1">
+
+    <RelativeLayout
+        android:id="@+id/rrrr"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fa8e36"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/back"
+            android:padding="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备详情"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <com.example.lizhi.rko.view.MyDashBoardView
+        android:id="@+id/dashview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rrrr"
+        android:layout_centerHorizontal="true"
+        app:dashColor="@color/colorPrimary"
+        app:headText="RNG" />
+
+    <RadioGroup
+        android:id="@+id/mrg_top"
+        android:layout_width="256dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/dashview"
+        android:layout_marginEnd="50dp">
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            style="@style/RG_xq"
+            android:text="通道1"
+            />
+        <RadioButton
+            android:id="@+id/rb_2"
+            style="@style/RG_xq"
+            android:text="通道2"/>
+        <RadioButton
+            android:id="@+id/rb_3"
+            style="@style/RG_xq"
+            android:text="通道3"/>
+        <RadioButton
+            android:id="@+id/rb_4"
+            style="@style/RG_xq"
+            android:text="通道4"/>
+
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/mrg_botm"
+        android:layout_width="256dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/mrg_top"
+        android:layout_marginEnd="50dp">
+
+        <RadioButton
+            android:id="@+id/rb_5"
+            style="@style/RG_xq"
+            android:text="通道5"/>
+        <RadioButton
+            android:id="@+id/rb_6"
+            style="@style/RG_xq"
+            android:text="通道6"/>
+        <RadioButton
+            android:id="@+id/rb_7"
+            style="@style/RG_xq"
+            android:text="通道7"/>
+        <RadioButton
+            android:id="@+id/rb_8"
+            style="@style/RG_xq"
+            android:text="通道8"/>
+
+    </RadioGroup>
+
+</RelativeLayout>
