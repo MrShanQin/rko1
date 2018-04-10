@@ -68,6 +68,7 @@ public class XQActivity extends AppCompatActivity {
                         if (pusher()==null){
                             //Toast.makeText(XQActivity.this,"目前没有数据",Toast.LENGTH_LONG).show();
                         }else{
+
                             Handler handler = new Handler() {//刷新页面
                                 @Override
                                 public void handleMessage(Message msg) {
